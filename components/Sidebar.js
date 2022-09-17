@@ -2,6 +2,7 @@ import Image from "next/image";
 import { AiOutlinePlus } from 'react-icons/ai';
 import { BsThreeDots } from 'react-icons/bs';
 import { TbCircleDashed } from 'react-icons/tb';
+import PersonInbox from "./PersonInbox";
 import Search from "./Search";
 
 const Sidebar = () => {
@@ -36,6 +37,23 @@ const Sidebar = () => {
             </div>
             {/* search input here.. */}
             <Search />
+            {/* inbox here.. */}
+            <div className="overflow-auto">
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+                <PersonInbox />
+            </div>
         </aside>
     );
 }
