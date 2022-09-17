@@ -8,7 +8,7 @@ const Sidebar = () => {
     const src = "https://placeimg.com/192/192/people"
 
     return (
-        <aside className="min-h-screen max-w-xs bg-red-400">
+        <aside className="min-h-screen min-w-[400px]">
             {/* header... */}
             <div className="h-16 bg-[#EBEBEB] flex justify-between  items-center px-4">
                 {/* my avatar... */}

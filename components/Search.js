@@ -1,11 +1,13 @@
+import { AiOutlineSearch } from "react-icons/ai";
+
 const Search = () => {
     return (
-        <div className="form-control">
-            <div className="input-group">
-                <button className="btn btn-square">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </button>
-                <input type="text" placeholder="Search…" className="input input-bordered" />
+        <div className="px-2 py-1">
+            <div className="flex items-center bg-[#EBEBEB] rounded-xl">
+                {/* search icon */}
+                <AiOutlineSearch className="text-lg bg-[#EBEBEB] ml-2 " />
+                {/* search icon */}
+                <input className="flex-1 bg-[#EBEBEB] outline-none px-4 py-2 font-light rounded-r-xl" type="search" name="" id="" placeholder="Search or start new chat" />
             </div>
         </div>
     );
