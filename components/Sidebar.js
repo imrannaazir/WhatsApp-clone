@@ -1,7 +1,9 @@
+import { signOut } from "firebase/auth";
 import Image from "next/image";
 import { AiOutlinePlus } from 'react-icons/ai';
 import { BsThreeDots } from 'react-icons/bs';
 import { TbCircleDashed } from 'react-icons/tb';
+import { auth } from "../firebase.init";
 import PersonInbox from "./PersonInbox";
 import Search from "./Search";
 
@@ -32,7 +34,24 @@ const Sidebar = () => {
                     {/* add btn.. */}
                     <AiOutlinePlus className="text-xl" />
                     {/* setting btn.. */}
-                    <BsThreeDots className="text-xl" />
+                    {/* <BsThreeDots className="text-xl dropdown dropdown-end" /> */}
+                    <div className="dropdown dropdown-end">
+                        <label tabIndex={0} className="cursor-pointer">
+
+                            <BsThreeDots className="text-xl" />
+
+                        </label>
+                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-52">
+                            <li>
+                                <a className="justify-between">
+                                    Profile
+                                    <span className="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><button onClick={() => signOut(auth)}>Logout</button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             {/* search input here.. */}
