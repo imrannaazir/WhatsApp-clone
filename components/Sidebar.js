@@ -61,17 +61,7 @@ const Sidebar = () => {
                 <PersonInbox />
                 <PersonInbox />
                 <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
-                <PersonInbox />
+
             </div>
         </aside>
     );

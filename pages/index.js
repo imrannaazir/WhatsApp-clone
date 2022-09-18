@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Conversions from '../components/Conversions'
+import Conversations from '../components/Conversations'
 import Sidebar from '../components/Sidebar'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
         {/* side bar... */}
         <Sidebar />
         {/* Main ... */}
-        <Conversions />
+        <Conversations />
       </div>
     </div>
   )
